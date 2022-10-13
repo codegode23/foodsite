@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Service</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+    
+    <!---Landing page starts-->
+    
+    <sectiion id="land" class="land">
+
+         <!---Header ends-->
+
+        <header class="head">
+
+            <nav class="navbar">
+
+                <ul>
+                    
+                    <li class="menu" >  Services <i class="fas fa-angle-down"> </i> 
+                        <ul class="dropdown">
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Delivery</a></li>
+                        </ul> 
+                    </li>
+
+                    <li class="menu" >  Menu <i class="fas fa-angle-down"></i> 
+                        <ul class="dropdown">
+                            <li><a href="#">Pizza</a></li>
+                            <li><a href="#">Burger</a></li>
+                        </ul> 
+                    </li>
+
+                    <li> Contact</a> 
+
+                    
+                </ul>
+
+            </nav>
+
+            <div class="icons">
+                <a href="#" id="search-btn" ><i class="ri-search-line"></i></a>
+                <a href="#" class="cart" ><i class="ri-shopping-bag-line"></i></a>
+                <a href="#" class="login"id="login-btn" ><i class="ri-login-box-line"></i>  login</a>
+            </div>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box"></label>
+            </form>
+
+        </header>
+
+
+        
+    <div class="hero">
+       
+
+        <div class="form-box">
+            <div id="close-login-btn" class="fas fa-times"></div>
+            <div class="button-box">
+
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+
+            </div>
+
+            <form id="login" class="input-group">
+
+                <input type="text" class="input-field" placeholder="Enter Email" required>
+
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+
+                <button type="submit" class="submit-btn">Log in</button>
+
+            </form>
+
+            <form id="register" class="input-group">
+
+                <input type="text" class="input-field" placeholder="First Name" required>
+
+                <input type="text" class="input-field" placeholder="Last Name" required>
+
+                <input type="email" class="input-field" placeholder="Email" required>
+
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+
+                <button type="submit" class="submit-btn">Register</button>
+
+            </form>
+
+
+        </div>
+
+        
+
+    </div>
+
+        <!---Header ends-->
+
+        <!----Landing page content starts-->
+        
+
+        <div class="land-container">
+
+            <div class="land-box">
+
+                <div class="faster">
+                    <p>More than Faster</p>
+                    <img src="serve/emoji4.png" alt="">
+                </div>
+
+                <h1>Be The Fastest In Delivering Your <span>Food</span></h1>
+
+                <p>Our job is to filling your tummy with delicious food and with fast and free delivery</p>
+
+                <div class="buttons">
+                <a href="#" class="start" >Get Started</a>   
+                <a href="#" class="watch"> <i class="fas fa-play"></i> Watch Video</a>                 
+                </div>
+
+                <div class="customers">
+
+                    <div class="images">
+                        <img src="serve/img-1.jpg" alt="">
+                        <img src="serve/img-2.jpg" alt="">
+                        <img src="serve/img-3.jpg" alt="">
+                    </div>
+
+                    <div class="reviews">
+                        <h3>Our Happy Customers</h3>
+                        <p><i class="fas fa-star"></i>   <span>  4,8  (12.5k Review)</span></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <img src="serve/girl.png" alt="" class="bim">
+
+
+
+        </div>
+        
+        <!----Landing page content ends-->
+
+    </sectiion>
+
+    <!---Landing page ends-->
+
+    <!---What we serve section starts-->
+
+    <section id="serve" class="serve">
+
+        <div class="serve-title">
+
+            <h3>WHAT WE SERVE</h3>
+
+            <h1>Your Favorite Food<br>Delivery Partner</h1>
+
+        </div>
+
+        <div class="serve-container">
+
+            <div class="serve-box">
+                <img src="serve/serv1.png" alt="">
+                <h3>Easy To Order</h3>
+                <p>You only need a few steps<br>in ordering food</p>
+            </div>
+
+            <div class="serve-box">
+                <img src="serve/serv2.png" alt="">
+                <h3>Fastest Delivery</h3>
+                <p>Delivery that is always ontime<br>even faster</p>
+            </div>
+
+            <div class="serve-box">
+                <img src="serve/serv3.png" alt="">
+                <h3>Best Quality</h3>
+                <p>Not only fast for us quality is also<br>number one</p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!---What we serve section ends-->
+
+    <!----Menu section Starts-->
+
+    <section class="menus" id="menus">
+
+        <div class="menu-title">
+           
+            <h3>OUR MENU</h3>
+
+            <h1>Menu That Always<br>Makes You Fall In Love</h1>
+        </div>
+
+        <div class="menu-container">
+            
+            <ul class="controls">
+                <li class="buttons active" data-filter="all"><img src="serve/all.png" alt=""> All </li>
+                <li class="buttons "data-filter="burger"> <img src="serve/burger.png" alt=""> Burger</li>
+                <li class="buttons" data-filter="pizza"> <img src="serve/pizzaa.png" alt="">  Pizza</li>
+                <li class="buttons" data-filter="cupcake"> <img src="serve/cake.png" alt="">  Cupcake</li>
+                <li class="buttons" data-filter="ramen"> <img src="serve/ramen.png" alt="">  Ramen</li>
+                <li class="buttons" data-filter="icecream"> <img src="serve/icecream.png" alt="">  Ice cream</li>
+                
+             
+            </ul>
+
+            <div class="menu-box">
+
+                <!----Burger-->
+                <div class="food-box burger">
+                    
+                    <img src="serve/burger1.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Mountain</h3>
+                        <h5>Ghc 30</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+                <div class="food-box burger">
+                    
+                    <img src="serve/burger2.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Regular</h3>
+                        <h5>Ghc 25</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+                <div class="food-box burger">
+                    
+                    <img src="serve/burger3.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Double</h3>
+                        <h5>Ghc 60</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+                <div class="food-box burger">
+                    
+                    <img src="serve/burger4.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Crispy</h3>
+                        <h5>Ghc 20</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+
+
+                <!----Pizza-->
+                <div class="food-box pizza">
+                    
+                    <img src="serve/pizza1.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Mixed</h3>
+                        <h5>Ghc 40</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+                <div class="food-box pizza">
+                    
+                    <img src="serve/pizza2.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Ordinary</h3>
+                        <h5>Ghc 20</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+                
+                <div class="food-box pizza">
+                    
+                    <img src="serve/pizza3.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Vegetable</h3>
+                        <h5>Ghc 25</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+                <div class="food-box pizza">
+                    
+                    <img src="serve/pizza4.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Meat</h3>
+                        <h5>Ghc 40</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+                <!---Cupcake--->
+
+                <div class="food-box cupcake">
+                    
+                    <img src="serve/cake1.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Vanilla</h3>
+                        <h5>Ghc 10</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+                <div class="food-box cupcake">
+                    
+                    <img src="serve/cake2.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Banana</h3>
+                        <h5>Ghc 10</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+                <div class="food-box cupcake">
+                    
+                    <img src="serve/cake3.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Chocolate</h3>
+                        <h5>Ghc 10</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+                <div class="food-box cupcake">
+                    
+                    <img src="serve/cake4.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Vanilla mix</h3>
+                        <h5>Ghc 15</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+
+                <!---Ramen-->
+
+                <div class="food-box ramen">
+                    
+                    <img src="serve/ramen1.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Pork</h3>
+                        <h5>Ghc 10</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+                <div class="food-box ramen">
+                    
+                    <img src="serve/ramen2.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Chicken</h3>
+                        <h5>Ghc 15</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+                <div class="food-box ramen">
+                    
+                    <img src="serve/ramen3.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Beef</h3>
+                        <h5>Ghc 17</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+                <div class="food-box ramen">
+                    
+                    <img src="serve/ramen4.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Tuna</h3>
+                        <h5>Ghc 23</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+
+                <!---Ice cream-->
+
+                <div class="food-box icecream">
+                    
+                    <img src="serve/icecream1.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Chocolate</h3>
+                        <h5>Ghc 14</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+                <div class="food-box icecream">
+                    
+                    <img src="serve/icecream2.jpeg" alt="">
+
+                    <div class="info">
+                        <h3>Blueberry</h3>
+                        <h5>Ghc 12</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+                <div class="food-box icecream">
+                    
+                    <img src="serve/icecream3.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Caramel</h3>
+                        <h5>Ghc 5</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+                <div class="food-box icecream">
+                    
+                    <img src="serve/icecream4.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Rainbow</h3>
+                        <h5>Ghc 15</h5>
+                        <p class="order" >Order Now  <i class="fas fa-angle-right"></i> </p>
+    
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!----Menu section Ends-->
+
+    <!---Testimonials section starts--->
+
+    <section class="testimonials" id="testimonials">
+
+        <div class="testimonials-container">
+
+            <img src="serve/chef.png" alt=""class="tim" >
+
+            <div class="testimonials-box">
+
+                <div class="testimonials-title">
+
+                    <h3>WHAT THEY SAY</h3>
+
+                    <h1>What Our Customers<br>Say About Us</h1>
+
+                </div>
+
+                <div class="comment-box">
+
+                        <h5>"Fudo is the best. Besides the many and delicious meals, 
+                            the service is also very good, escpecially i the very 
+                            fast delivery. I highly recmmend Fudo to you".
+                        </h5>
+
+                        <div class="mini-comment">
+
+                            <img src="serve/img-2.jpg" alt="">
+
+                            <div class="comms">
+
+                            <h3>Theresa Jordan</h3>
+
+                            <p>Food Enthusiast</p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> 
+                            <p>5</p>
+                        </div>
+
+                </div>
+        
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <!---Testimonials section ends--->
+
+    <!---App Section Starts--->
+
+    <section id="app" class="app">
+
+        <div class="app-container">
+
+            <div class="app-words">
+                
+                <h3>DOWNLOAD APP</h3>
+
+                <h1>Get Started With<br>Fudo Today</h1>
+
+                <p>Discover food wherever and whenever and get your food delivered quickly</p>
+
+                <h5>Get The App</h5>
+
+            </div>
+
+            <img src="serve/app.png" alt="" class="apim" >
+
+        </div>
+
+
+    </section>
+
+
+    <!---App Section Ends--->
+
+  <!---Footer Section Starts-->
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="left-box">
+            <p>Our job is to filling your tummy with<br>delicious food and with fast<br>and free delivery
+            </p>
+            <div class="socials">
+                <a href=""> <i class="fab fa-instagram"></i> </a>
+                <a href=""> <i class="fab fa-facebook-f"></i> </a>
+                <a href=""> <i class="fab fa-twitter"></i> </a>
+            </div>
+        </div>
+
+        <div class="right-box">
+
+            <div class="col-1">
+                <h4>About</h4>
+                <a href="">About Us</a>
+                <a href="">Features</a>
+                <a href="">News</a>
+                <a href="">Menu</a>
+            </div>
+
+            <div class="col-1">
+                <h4>Company</h4>
+                <a href="">Why Fudo?</a>
+                <a href="">Patner with us</a>
+                <a href="">FAQ</a>
+                <a href="">Blogs</a>
+            </div>
+
+            <div class="col-1 active">
+                <h4>Support</h4>
+                <a href="">Account</a>
+                <a href="">Support Center</a>
+                <a href="">Feedback</a>
+                <a href="">Contact Us</a>
+                <a href="">Accessibility</a>
+            </div>
+
+            <div class="col-1 active">
+                <h4>Get in Touch</h4>
+                <a href="">Question or Feedback?</a>
+                <a href="">We'd love to hear from you</a>
+
+                <h5>Email Address <i class="fas fa-caret-right"></i> </h5>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+        <!---jquery cdn link-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
